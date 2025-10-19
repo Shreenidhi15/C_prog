@@ -1,0 +1,231 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout << "Enter a number" << endl;
+    cin >> n ;
+    for(int i=0;i<n;i++){
+        //spaces
+        for(int j=0;j<n-i-1;j++){
+            cout << " ";
+        }cout << "*";
+        
+
+        if(i!=0){
+            //spaces
+            for(int j=0;j<2*i-1;j++){
+                cout << " ";
+            }
+            cout << "*";
+        }
+        cout << endl;
+    
+         for(int i=0;i<n-1;i++){
+        //spaces
+        for(int j=0;j<i+1;j++){
+            cout << " ";
+        }cout << "*";
+        
+
+        if(i!=n-1){
+            //spaces
+            for(int j=0;j<2*(n-i)-5;j++){
+                cout << " ";
+            }
+            cout << "*";
+        }
+        cout << endl;
+    } 
+    }return 0;
+}
+
+//Pattern Output;
+//     int n;
+//     cout << "Enter a number"<<endl;
+//     cin >> n;
+//     for(int i=1;i<=n;i++){
+//     for(int i=1;i<=n;i++){
+//         cout << i << " " ;
+//     }
+//     cout << endl;
+// }return 0;
+
+//Star Pattern Output;
+// int n;
+//     cout << "Enter a number" << endl;
+//     cin >> n;
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=n;j++){
+//             cout << "*" <<" " ;
+//                }cout << endl;
+//     }return 0;
+
+//ABC Pattern Output
+// int n;
+//     cout << "Enter a number" << endl;
+//     cin >> n;
+    
+//    for(int i=0;i<n;i++){
+//     char ch='A';
+//     for(int j=0;j<n;j++){
+//         cout << ch <<" ";
+//         ch+=1;
+//     } cout << endl;
+//    }return 0;
+
+//Countinous Number Pattern Output
+//  int n;
+//     int num=1;
+//     cout << "Enter the number" << endl;
+//     cin >> n;
+//     for(int i=0;i<n;i++){
+         
+//         for(int j=0;j<n;j++){
+//             cout << num <<" ";
+//             num++;
+            
+//         }cout<<endl;
+       
+//     }return 0;
+
+//Continous ABc Pattern Output
+// int n;
+//     char ch='A';
+//     cout << "Enter a number" << endl;
+//     cin >> n;
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<n;j++){
+//             cout << ch <<" ";
+//             ch+=1;
+//         }cout <<endl;
+//     }return 0;   
+
+//Star Right Angle Triangle Pattern Output
+//  int n;
+//     cout << "Enter a number" << endl;
+//     cin >> n ;
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<i+1;j++){
+//             cout << "*" <<" ";
+//         }cout << endl;
+//     }return 0; 
+
+//Number Right Angle Triangle Pattern Output
+//  int n;
+//     int num=1;
+//     cout << "Enter a number" << endl;
+//     cin >> n ;
+//     for(int i=0;i<n;i++){
+//         // int num=1;
+//         for(int j=0;j<i+1;j++){
+//             cout << num <<" ";
+//             num+=1;
+//         }cout << endl;
+//     }return 0; 
+// }
+
+//Repeated Number Right Angle Triangle Pattern Output
+// int n;
+   
+//     cout << "Enter a number" << endl;
+//     cin >> n ;
+//     for(int i=0;i<n;i++){
+        
+//         for(int j=0;j<i+1;j++){
+//             cout << i+1 <<" ";
+            
+//         }cout << endl;
+//     }return 0; 
+// }
+
+//ABC Right Angle Triangle Pattern Output
+// int n;
+//     // char ch ='A';
+//     cout << "Enter a number" << endl;
+//     cin >> n ;
+//     for(int i=0;i<n;i++){
+//         int ch =65;
+//         for(int j=0;j<i+1;j++){
+//             cout << char(ch+i) <<" ";
+          
+            
+//         }cout << endl;
+//     }return 0; 
+// }
+
+ //Repeated 123... Right Angle Triangle Pattern Output
+//  int n;
+//     cout << "Enter a number" << endl;
+//     cin >> n ;
+//     for(int i=0;i<n;i++){
+//          int num=1;
+//         for(int j=0;j<i+1;j++){
+//             cout << num <<" ";
+//             num+=1;
+          
+            
+//         }cout << endl;
+//     }return 0; 
+// }
+
+//Reverse Number Right Angle Triangle Pattern Output
+//  int n;
+//     cout << "Enter a number" << endl;
+//     cin >> n ;
+//     for(int i=0;i<n;i++){
+//         for(int j=i+1;j>0;j--){
+//             cout << j <<" ";
+           
+          
+            
+//         }cout << endl;
+//     }return 0; 
+// }
+
+//Floyd's Triangle Pattern Output
+//  int n;
+//     int num=1;
+//     cout << "Enter a number" << endl;
+//     cin >> n ;
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<i+1;j++){
+//             cout << num <<" ";
+//             num+=1;      
+//         }cout << endl;
+//     }return 0; 
+// }
+
+//Inverted Floyd's Triangle Pattern Output
+//  int n;
+//     int num=1;
+//     cout << "Enter a number" << endl;
+//     cin >> n ;
+//     for(int i=n-1;i>0;i--){
+//         for(int j=1;j<i+1;j++){
+//             cout << j <<" ";
+              
+//         }cout << endl;
+//     }return 0; 
+// }
+
+//Pyramid Number Pattern Output
+//   int n;
+//     cout << "Enter a number" << endl;
+//     cin >> n ;
+//     for(int i=0;i<n;i++){
+//         //spaces
+//         for(int j=1;j<=n-i-1;j++){
+//             cout << " ";
+//         }
+//         //num1
+//         for(int j=1;j<=i+1;j++){
+//             cout << j ;
+//         }
+//         //num2
+//         for(int j=i;j>=1;j--){
+//             cout << j ;
+//         }cout << endl;
+    
+//     }return 0; 
+// }
+
