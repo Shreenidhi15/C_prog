@@ -1,0 +1,109 @@
+#include<iostream>
+using namespace std;
+int main(){
+  
+   
+  
+}
+
+
+
+//To tell whether the num is positive or negative
+int num;
+    cout << "Enter any nummber: " << endl;
+    cin >> num;
+    if (num >= 0){
+        cout << "Postive number "<< endl;
+    }else{
+        cout << "Negative number "<< endl;
+    }
+
+//To check if a person can vote or not
+    int age;
+    cout << "Enter your age: " << endl;
+    cin >> age;
+    if(age>=18){
+        cout << "Eligible to vote: "<< endl;
+    }else{
+        cout << "Try again after:"<< (18-age)<< "year/years"<< endl;
+    }
+
+//To check if number is odd or even
+     int num;
+    cout << "Enter any nummber: " << endl;
+    cin >> num;
+    if(num%2==0){
+        cout << "Even Number\n";
+    }else{
+        cout << "Odd Number/n";
+    }
+    
+//Grading system
+     int marks;
+    cout << "Enter your marks: " << endl;
+    cin >> marks;
+    if(marks>=90){
+        cout << "Grade: A+\n";
+    }else if (marks>=80){
+        cout << "Grade: A\n";    
+    }else if(marks>=70){
+        cout << "Grade: B+\n";
+    }else if(marks>=60){
+        cout << "Grade: B\n"; 
+    }else{
+        cout << "Grade: C\n";
+    }
+   
+//To check char is upper or lower case
+    char ch;
+    cout << "Enter your character: " << endl;
+    cin >> ch;
+    if(ch>='a' && ch<='z'){
+        cout <<"lowercase\n";
+    }
+    else{
+        cout << "UPPERCASE\n";
+    }
+
+   // Postive or negative usinternary statement
+     int num;
+    cout <<"Enter the number:\n";
+    cin >> num;
+    cout << (num >=0? "Positive\n":"Negative\n");
+    return 0;
+
+    //While Loop
+    int num=1;
+    
+    while(num<=5){
+        cout << num << " ";
+        num++;
+    }
+cout << endl;
+
+//For loop
+ int n=10;
+   for(int i=1;i<=n;i++){
+    cout << i <<" ";
+   }
+
+//sum of n numbers
+int n;
+   cout << "Enter the value of n: ";
+   cin >> n;
+   int sum=0;
+   for(int i=1;i<=n;i++){
+    sum+=i;     
+   }cout << sum << endl;
+
+Break condn
+ int n=50;
+   int count=0;
+   for(int i=1;i<=n;i++){
+    count+=i;
+    
+    if(i==5){
+        break;
+    }}cout << count;
+    return 0;
+      
