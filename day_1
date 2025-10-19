@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+int main(){
+   int age;
+   cout<<"Enter the age:";
+   cin>>age;
+   cout<<"Your age is: "<<age<<endl;
+
+//Artimatic operator
+   int a=15;
+   int b=20;
+   cout<<"Sum is: "<<(a+b)<<endl;
+   cout<<"Difference is: "<<(a-b)<<endl;
+   cout<<"Product is: "<<(a*b)<<endl;
+   cout<<"Division is: "<<(a/(double)b)<<endl;
+
+//Relational operators
+   cout<<(a>b)<<endl;
+   cout<<(a==b)<<endl;
+   cout<<(a<b)<<endl;
+
+   //sum of 2 numbers
+   int c;
+   cout<<"Enter a number: ";
+   cin>>c;
+   int d;
+   cout<<"Enter another number: ";
+   cin>>d;
+   cout<<"Sum of the given two numbers is: "<<(c+d)<<endl;
+
+   //Unary operators
+   int g=15;
+   int k=g++;
+   cout<<"Value is: "<<k<<endl;
+   cout<<"New value is: "<<g<<endl;
+   int p=15;
+   int l=g++;
+   cout<<"Value is: "<<l<<endl;
+   cout<<"New value is: "<<p<<endl;
+
+    return 0;
+
+
+}
