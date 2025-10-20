@@ -1,0 +1,100 @@
+#include <iostream>
+using namespace std;
+
+int fact(int n){
+    int fac=1;
+    for(int i=1;i<=n;i++){
+        fac=fac*i;
+    }
+    return fac;
+}
+int ncr(int n,int r){
+    int num = fact(n);
+    int den = fact(r)*fact(n-r);
+    return num/den;
+}
+int main(){
+    int n;
+    cout << "Enter a number"<<endl;
+    cin >> n;
+    int r;
+    cout << "Enter r value"<< endl;
+    cin >> r;
+    cout << "The nCr value is: " << ncr(n,r) << endl;
+    return 0;
+}
+
+
+//Function
+// int hello(){
+//     cout << "Welcome Back!!"<< endl;  
+// }
+// int main(){
+//     int a = 5;
+//     int b = 10;
+//     int sum = a+b;
+//     hello();
+//     cout << "The sum is: " << sum << endl;
+//     return 0;
+// }
+
+//Addition
+// int sum(int a,int b){
+//     int s = a+b;
+//     return s;  
+// }
+// int main(){
+//     int n1,n2;
+//     cout << "Enter a numbers: "<< endl;
+//     cin >> n1 ;
+//     cin >> n2 ;
+//     int result = sum(n1,n2);
+//     cout << "The sum  is: " << result << endl;
+//     return 0;
+// }
+
+//factorial
+// int fact(int n) {
+//     int fac = 1;  // factorial starts from 1
+
+//     if (n == 0) {
+//         return 1;  // by definition, 0! = 1
+//     }
+
+//     for (int i = 1; i <= n; i++) {
+//         fac = fac * i;  // multiply each number
+//     }
+//     return fac;
+// }
+
+// int main() {
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
+
+//     int result = fact(n);
+//     cout << "The factorial is: " << result << endl;
+
+//     return 0;
+// }
+
+//Sum of Digits
+// int sumofdigits(int n) {
+//     int sum = 0;
+//     while (n > 0) {
+//         int digit = n % 10; // Extract the last digit
+//         sum += digit;       // Add it to the sum
+//         n /= 10;           // Remove the last digit
+//     }
+//     return sum;
+// }
+// int main() {
+//     int number;
+//     cout << "Enter a number: ";
+//     cin >> number;
+
+//     int result = sumofdigits(number);
+//     cout << "The sum of digits is: " << result << endl;
+
+//     return 0;
+// }
